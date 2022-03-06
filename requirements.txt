@@ -1,3 +1,4 @@
 discord.py
 flask
 flask_restful
+git+https://github.com/Merubokkusu/Discord-S.C.U.M.git#egg=discum
