@@ -1,10 +1,10 @@
 import discord,discum, os, time     
-bot = discum.Client(token=os.getenv("TOKEN"), log=False)
+bot = discum.Client(token=os.getenv('TOKEN'), log=False)
 from discum.utils.slash import SlashCommander
 from discord.ext import commands
 
 
-bot = commands.Bot(command_prefix = "--", self_bot=True)
+botz = commands.Bot(command_prefix = "--", self_bot=True)
 
 @bot.event
 async def on_ready():
@@ -13,7 +13,7 @@ async def on_ready():
 
 
 
-@bot.command()
+@botz.command()
 async def bla(ctx):
     while True:
         def slashCommandTest(resp, guildID, channelID, botID):
@@ -41,4 +41,4 @@ async def bla(ctx):
 
         
 
-bot.run(token, bot = False)
+botz.run(token, bot = False)
