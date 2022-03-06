@@ -24,7 +24,7 @@ async def bla(ctx):
 		        bot.gateway.removeCommand(slashCommandTest) #because 2 guild_app_cmd_update events are received...idk ask discord why
 		        slashCmds = resp.parsed.auto()['application_commands'] #get the slash cmds
 		        s = SlashCommander(slashCmds, application_id=botID) #for easy slash cmd data creation
-		        data = s.get(['bump',' '], inputs={'name':'test'})
+		        data = s.get(['bump'], inputs={'name':'test'})
 	        	bot.triggerSlashCommand(botID, channelID=channelID, guildID=guildID, data=data, sessionID=bot.gateway.session_id) #and send it off
 	        	bot.gateway.close() #optional. It's better to remove this line actually.
 
