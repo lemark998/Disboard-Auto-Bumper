@@ -20,7 +20,7 @@ async def on_ready():
 @bot.command()
 async def bla(ctx):
     while True:
-        await ctx.send("!d bump")
+        await ctx.send("/bump")
         time.sleep(8125)
 
 
