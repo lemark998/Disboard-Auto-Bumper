@@ -1,5 +1,5 @@
 import discord,discum, os, time     
-bot = discum.Client(token=os.getenv('TOKEN'), log=False)
+bot = discum.Client(token=os.getenv("TOKEN"), log=False)
 from discum.utils.slash import SlashCommander
 from discord.ext import commands
 
