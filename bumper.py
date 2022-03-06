@@ -10,6 +10,7 @@ botz = commands.Bot(command_prefix = "--", self_bot=True)
 @botz.event
 async def on_ready():
     print("Auto Bumper Is Online!")
+    bot.gateway.run()
 
 
 
@@ -41,5 +42,4 @@ async def bla(ctx):
         time.sleep(8125)
 
         
-bot.gateway.run()
 botz.run(token, bot = False)
