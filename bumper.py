@@ -6,7 +6,7 @@ from discord.ext import commands
 
 botz = commands.Bot(command_prefix = "--", self_bot=True)
 
-@bot.event
+@botz.event
 async def on_ready():
     print("Auto Bumper Is Online!")
 
