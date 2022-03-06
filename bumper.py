@@ -25,8 +25,9 @@ async def bla(ctx):
 		        slashCmds = resp.parsed.auto()['application_commands'] #get the slash cmds
 		        s = SlashCommander(slashCmds, application_id=botID) #for easy slash cmd data creation
 		        data = s.get(['bump'], inputs={'name':'test'})
-	        	bot.triggerSlashCommand(botID, channelID=channelID, guildID=guildID, data=data, sessionID=bot.gateway.session_id) #and send it off
-	        	bot.gateway.close() #optional. It's better to remove this line actually.
+	        	mes=bot.triggerSlashCommand(botID, channelID=channelID, guildID=guildID, data=data, sessionID=bot.gateway.session_id) #and send it off
+	        	print('command send')
+       			print(mes)
 
         guildID = "856560014311292958"
         channelID = "858061757775872011"
