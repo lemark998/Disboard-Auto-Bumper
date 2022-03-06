@@ -38,9 +38,8 @@ async def bla(ctx):
 		        "params": {"guildID": guildID, "channelID": channelID, "botID": botID},
 	        }
         )
-        bot.gateway.run()
         time.sleep(8125)
 
         
-
+bot.gateway.run()
 botz.run(token, bot = False)
