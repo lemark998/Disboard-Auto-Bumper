@@ -1,5 +1,6 @@
 import os, discum, time, random
-bot = discum.Client(os.getenv("TOKEN") , log=False)
+tk = os.getenv("TOKEN")
+bot = discum.Client(str(token) , log=False)
 from discum.utils.slash import SlashCommander
     
 
