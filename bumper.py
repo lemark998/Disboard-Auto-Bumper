@@ -1,6 +1,3 @@
- 
-
-
 import os, discum, time, random
 token = os.getenv("TOKEN")
 bot = discum.Client(token , log=False)
