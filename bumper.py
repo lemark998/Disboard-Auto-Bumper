@@ -24,7 +24,7 @@ while x:
             bot.gateway.close() #optional. It's better to remove this line actually.
 
     guildID = "856560014311292958"
-    channelID = "858061757775872011"
+    channelID = "1008574078598262865"
     botID = "302050872383242240"
     bot.gateway.command(
         {
