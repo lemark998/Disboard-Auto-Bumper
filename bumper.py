@@ -23,8 +23,8 @@ while x:
             print(mes)
             bot.gateway.close() #optional. It's better to remove this line actually.
 
-    guildID = "1012208871890235404"
-    channelID = "1012212558045917194"
+    guildID = "1012209083492859944"
+    channelID = "1012212441846906910"
     botID = "302050872383242240"
     bot.gateway.command(
         {
